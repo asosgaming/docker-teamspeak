@@ -8,7 +8,6 @@ ENV   TS_VERSION=3.0.13.6 \
       TS_HOME=/teamspeak \
       TS_DATA=/teamspeak/files
 
-
 ARG BUILD_DATE
 ARG VCS_REF
 LABEL org.label-schema.build-date=$BUILD_DATE \
