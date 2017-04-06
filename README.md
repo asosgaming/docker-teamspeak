@@ -1,13 +1,12 @@
 ## ASoS Gaming TeamSpeak 3 Docker Image
 
-
-##Docker Information
+## Docker Information
 
 [![Docker Automated build](https://img.shields.io/docker/automated/asos/teamspeak.svg?style=plastic)](https://hub.docker.com/r/asos/teamspeak/builds)
 [![Docker Pulls](https://img.shields.io/docker/pulls/asos/teamspeak.svg?style=plastic)](https://github.com/asosgaming/teamspeak)
 
 ## Version:
-[1.0.0.5](https://github.com/asosgaming/teamspeak/blob/master/Dockerfile)
+Current Version [1.0.0.5](https://github.com/asosgaming/teamspeak/blob/master/Dockerfile)
 
 [![Github Releases (by Release)](https://img.shields.io/github/release/asosgaming/teamspeak.svg?style=plastic)](https://github.com/asosgaming/teamspeak/releases)
 [![GitHub tag](https://img.shields.io/github/tag/asosgaming/teamspeak.svg?style=plastic)](https://github.com/asosgaming/teamspeak/tags)
@@ -19,26 +18,20 @@
 [![Stories in Ready](https://badge.waffle.io/asosgaming/teamspeak.png?label=ready&title=Ready)](http://waffle.io/asosgaming/teamspeak)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/asosgaming/teamspeak/develop/LICENSE)
 
-Docker container for the TeamSpeak 3 Server.
+## Instructions
 
 TeamSpeak 3 Homepage: https://www.teamspeak.com/teamspeak3.html
 
 
 * Installation Instructions
 
-*      More Information will be added later.
-      As of right now this image is built to use custom variables.
-      These variables must be set in your docker.compose file.   
-      If you do not use a docker-compose file this will not work for you
-      This build was made to be used with MariaDB or MySQL only
-      You may create a folder on your docker host at /storate/teamspeak and assign permissions to 4000:4000 (teamspeak:teamspeak)
-      Upload your backups and license keys to this directory on the docker host.
-
-------------------------UPDATES---------------------------
-
-Instituting Changes to allow for Docker Image Tags in build environment.
-Completed Update of Teamspeak Server to latest version allowed for use with Sinusbot.
-Versioning added to match Sinusbot Versions. For best results make sure both versions are the same.
+  -  More Information will be added later.
+  -  As of right now this image is built to use custom variables.
+  -  These variables must be set in your docker.compose file.   
+  -  If you do not use a docker-compose file this will not work for you
+  -  This build was made to be used with MariaDB or MySQL only
+  -  You may create a folder on your docker host at /storate/teamspeak and assign permissions to 4000:4000 (teamspeak:teamspeak)
+  -  Upload your backups and license keys to this directory on the docker host.
 
 ----------------------------------------------------------
 
@@ -74,6 +67,14 @@ Below is the complete list of available options that can be used to customize yo
 | `TS3_MARIADB_HOST` | Hostname of the DatabaseServer like localhost Default to  `Not Set`. |
 | `TS3_MARIADB_PORT` | DatabaseServer Port. Default to  `Not Set`.  |
 
+----------------------------------------------------------
+## UPDATES
+
+Instituting Changes to allow for Docker Image Tags in build environment.
+Completed Update of Teamspeak Server to latest version allowed for use with Sinusbot.
+Versioning added to match Sinusbot Versions. For best results make sure both versions are the same.
+
+----------------------------------------------------------
 
 # LICENSE
 The MIT License (MIT)
