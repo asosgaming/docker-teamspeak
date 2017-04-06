@@ -6,9 +6,17 @@
 
 [![](https://images.microbadger.com/badges/version/asos/teamspeak.svg)](https://microbadger.com/images/asos/teamspeak "Get your own version badge on microbadger.com")
 [![](https://images.microbadger.com/badges/image/asos/teamspeak.svg)](https://microbadger.com/images/asos/teamspeak "Get your own image badge on microbadger.com")
+
+
 [![Docker Automated build](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg?style=plastic)](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)
 [![Github Releases (by Release)](https://img.shields.io/github/downloads/atom/atom/v0.190.0/total.svg)](https://github.com/asosgaming/teamspeak/releases/tag/1.0.0.5)
+
+
+
+[![GitHub forks](https://img.shields.io/github/forks/asosgaming/teamspeak.svg?style=plastic)](https://github.com/asosgaming/teamspeak/network)
+[![GitHub issues](https://img.shields.io/github/issues/asosgaming/teamspeak.svg?style=plastic)](https://github.com/asosgaming/teamspeak/issues)
 [![Stories in Ready](https://badge.waffle.io/asosgaming/teamspeak.png?label=ready&title=Ready)](http://waffle.io/asosgaming/teamspeak)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/asosgaming/teamspeak/develop/LICENSE)
 
 Docker container for the TeamSpeak 3 Server.
 
