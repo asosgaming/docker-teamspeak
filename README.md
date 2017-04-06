@@ -3,7 +3,7 @@
 ## Version: [1.0.0.5](https://github.com/asosgaming/teamspeak/blob/master/Dockerfile)
 
 
-[![Docker Automated build](https://img.shields.io/docker/automated/asos/teamspeak.svg?style=plastic)](https://img.shields.io/docker/automated/asos/teamspeak/builds)
+[![Docker Automated build](https://img.shields.io/docker/automated/asos/teamspeak.svg?style=plastic)](https://hub.docker.com/r/asos/teamspeak/builds)
 [![Github Releases (by Release)](https://img.shields.io/github/release/asosgaming/teamspeak.svg?style=plastic)](https://github.com/asosgaming/teamspeak/releases)
 [![Docker Pulls](https://img.shields.io/docker/pulls/asos/teamspeak.svg?style=plastic)](https://github.com/asosgaming/teamspeak)
 
