@@ -1,16 +1,21 @@
 ## ASoS Gaming TeamSpeak 3 Docker Image
 
-## Current Version: [1.0.0.5](https://github.com/asosgaming/teamspeak/blob/master/Dockerfile)
+## Version: [1.0.0.5](https://github.com/asosgaming/teamspeak/blob/master/Dockerfile)
+
+* Version 1.0.0.5
 
 [![](https://images.microbadger.com/badges/version/asos/teamspeak.svg)](https://microbadger.com/images/asos/teamspeak "Get your own version badge on microbadger.com")
 [![](https://images.microbadger.com/badges/image/asos/teamspeak.svg)](https://microbadger.com/images/asos/teamspeak "Get your own image badge on microbadger.com")
+[![Docker Automated build](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg?style=plastic)](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)
+[![Github Releases (by Release)](https://img.shields.io/github/downloads/atom/atom/v0.190.0/total.svg)](https://github.com/asosgaming/teamspeak/releases/tag/1.0.0.5)
+[![Stories in Ready](https://badge.waffle.io/asosgaming/sinusbot.png?label=ready&title=Ready)](http://waffle.io/asosgaming/sinusbot)
 
 Docker container for the TeamSpeak 3 Server.
 
 TeamSpeak 3 Homepage: https://www.teamspeak.com/teamspeak3.html
 
 
-* Installation Instuctions
+* Installation Instructions
 
 *      More Information will be added later.
       As of right now this image is built to use custom variables.
@@ -61,4 +66,7 @@ Below is the complete list of available options that can be used to customize yo
 | `TS3_MARIADB_PORT` | DatabaseServer Port. Default to  `Not Set`.  |
 
 
-* License
+# LICENSE
+The MIT License (MIT)
+
+Copyright (c) 2017 ASoS Gaming www.asosgaming.com
