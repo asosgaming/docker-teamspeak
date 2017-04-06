@@ -77,4 +77,4 @@ Below is the complete list of available options that can be used to customize yo
 # LICENSE
 The MIT License (MIT)
 
-Copyright (c) 2017 ASoS Gaming www.asosgaming.com
+Copyright © 2017 ASoS Gaming www.asosgaming.com
