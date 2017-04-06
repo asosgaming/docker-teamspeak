@@ -70,11 +70,9 @@ Below is the complete list of available options that can be used to customize yo
 ----------------------------------------------------------
 ## UPDATES
 
-Instituting Changes to allow for Docker Image Tags in build environment.
-Completed Update of Teamspeak Server to latest version allowed for use with Sinusbot.
-Versioning added to match Sinusbot Versions. For best results make sure both versions are the same.
-
-----------------------------------------------------------
+- Instituting Changes to allow for Docker Image Tags in build environment.
+- Completed Update of Teamspeak Server to latest version allowed for use with Sinusbot.
+- Versioning added to match Sinusbot Versions. For best results make sure both versions are the same.
 
 # LICENSE
 The MIT License (MIT)
