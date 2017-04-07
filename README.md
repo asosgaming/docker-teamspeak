@@ -1,13 +1,7 @@
 ## ASoS Gaming TeamSpeak 3 Docker Image
 
-## Docker Information
-
 [![Docker Automated build](https://img.shields.io/docker/automated/asos/teamspeak.svg?style=plastic)](https://hub.docker.com/r/asos/teamspeak/builds)
 [![Docker Pulls](https://img.shields.io/docker/pulls/asos/teamspeak.svg?style=plastic)](https://github.com/asosgaming/teamspeak)
-
-## Version:
-Current Version [1.0.0.5](https://github.com/asosgaming/teamspeak/blob/master/Dockerfile)
-
 [![Github Releases (by Release)](https://img.shields.io/github/release/asosgaming/teamspeak.svg?style=plastic)](https://github.com/asosgaming/teamspeak/releases)
 [![GitHub tag](https://img.shields.io/github/tag/asosgaming/teamspeak.svg?style=plastic)](https://github.com/asosgaming/teamspeak/tags)
 [![GitHub forks](https://img.shields.io/github/forks/asosgaming/teamspeak.svg?style=plastic)](https://github.com/asosgaming/teamspeak/network)
