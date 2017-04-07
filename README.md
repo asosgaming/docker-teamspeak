@@ -24,7 +24,7 @@ TeamSpeak 3 Homepage: https://www.teamspeak.com/teamspeak3.html
   -  These variables must be set in your docker.compose file.   
   -  If you do not use a docker-compose file this will not work for you
   -  This build was made to be used with MariaDB or MySQL only
-  -  You may create a folder on your docker host at /storate/teamspeak and assign permissions to 4000:4000 (teamspeak:teamspeak)
+  -  You may create a folder on your docker host at /storage/teamspeak and assign permissions to 4000:4000 (teamspeak:teamspeak)
   -  Upload your backups and license keys to this directory on the docker host.
 
 ----------------------------------------------------------
