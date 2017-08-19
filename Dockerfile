@@ -3,10 +3,10 @@ MAINTAINER Reesey275 <reesey275@gmail.com>
 
 ENV TS3_USER=teamspeak \
     TS3_GROUP=teamspeak \
-    TS3_HOME=/teamspeak \
+    TS3_HOME=/teamspeak/ \
     TS3_VERSION=3.0.13.6 \
-    TS3_FILENAME=teamspeak3-server_linux_amd64 
-	
+    TS3_FILENAME=teamspeak3-server_linux_amd64
+
 # Build-time metadata as defined at http://label-schema.org
 ARG BUILD_DATE
 ARG VCS_REF
@@ -20,7 +20,7 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.vendor="ASoS Gaming Community" \
       org.label-schema.version=$VERSION \
       org.label-schema.schema-version="1.0"
-	
+
 ADD entrypoint.sh /entrypoint.sh
 RUN chmod 755 /entrypoint.sh && \
     apt-get -q update && \
@@ -28,6 +28,7 @@ RUN chmod 755 /entrypoint.sh && \
     locales \
     wget \
     sudo \
+    nano \
     mysql-common \
     libxcursor1 \
     libglib2.0-0 \
