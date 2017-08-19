@@ -26,6 +26,7 @@ RUN chmod 755 /entrypoint.sh && \
     apt-get -q update && \
     apt-get -q install -y \
     locales \
+	nano \
     wget \
     sudo \
     mysql-common \
