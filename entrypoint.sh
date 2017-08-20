@@ -1,11 +1,5 @@
 #!/bin/bash
 
-echo "Removing /tmp/.X1-lock, if existing"
-rm -f /tmp/.X1-lock
-
-echo "Correcting mount point permissions ..."
-chown "$TS3_USER":"$TS3_GROUP" -R "$TS3_HOME"
-
 # Set Configuration for Teamspeak in ts3server.ini
 # The following Lines will set the ts3server.ini
 
