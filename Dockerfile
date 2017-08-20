@@ -4,6 +4,7 @@ MAINTAINER Reesey275 <reesey275@gmail.com>
 ENV TS3_USER="4000" \
     TS3_GROUP="4000" \
     TS3_HOME=/teamspeak/ \
+    TS3_DATA=/teamspeak/files \
     TS3_VERSION=3.0.13.6 \
     TS3_FILENAME=teamspeak3-server_linux_amd64
 
