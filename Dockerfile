@@ -1,8 +1,8 @@
 FROM debian:jessie
 MAINTAINER Reesey275 <reesey275@gmail.com>
 
-ENV TS3_USER=teamspeak \
-    TS3_GROUP=teamspeak \
+ENV TS3_USER="4000" \
+    TS3_GROUP="4000" \
     TS3_HOME=/teamspeak/ \
     TS3_VERSION=3.0.13.6 \
     TS3_FILENAME=teamspeak3-server_linux_amd64
@@ -21,6 +21,7 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.version=$VERSION \
       org.label-schema.schema-version="1.0"
 
+COPY entrypoint.sh ${TS3_HOME}/entrypoint.sh
 ADD entrypoint.sh /entrypoint.sh
 RUN chmod 755 /entrypoint.sh && \
     apt-get -q update && \
@@ -37,8 +38,8 @@ RUN chmod 755 /entrypoint.sh && \
     tar \
     sqlite3 \
     ca-certificates && \
-    groupadd -g 4000 -r ${TS3_GROUP} && \
-    useradd -u 4000 -r -m -g ${TS3_GROUP} -d ${TS3_HOME} ${TS3_USER} && \
+    groupadd -g 4000 -r teamspeak && \
+    useradd -u 4000 -r -m -g ${TS3_GROUP} -d ${TS3_HOME} teamspeak && \
     update-ca-certificates && \
     locale-gen --purge en_US.UTF-8 && \
     echo LC_ALL=en_US.UTF-8 >> /etc/default/locale && \
@@ -55,7 +56,6 @@ RUN   wget "http://dl.4players.de/ts/releases/${TS3_VERSION}/${TS3_FILENAME}-${T
        && rm -r ${TS3_HOME}/tsdns \
        && rm -r ${TS3_FILENAME}
 
-ADD entrypoint.sh ${TS3_HOME}/entrypoint.sh
 
 RUN  cp $(pwd)/redist/libmariadb.so.2 $(pwd)
 

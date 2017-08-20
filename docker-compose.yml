@@ -10,9 +10,9 @@ Teamspeak3:
             - ${DATA_VOLUME}:/teamspeak/files
 
         environment:
-            - TS3_MARIADB_HOST=${MDB_HOST}
-            - TS3_MADIADB_PORT=${MDB_PORT}
-            - TS3_MARIDDB_USER=${MDB_USER}
-            - TS3_MARIDDB_PASS=${MDB_PASS}
-            - TS3_MARIDDB_DB=${MDB_DB}
-            - TS3_LICENSE_PATH=${TS3_LICENSE_PATH}
+            - TS3_MARIADB_HOST=${TS3_MARIADB_HOST}
+            - TS3_MADIADB_PORT=${TS3_MARIADB_PORT}
+            - TS3_MARIDDB_USER=${TS3_MARIADB_USER}
+            - TS3_MARIDDB_PASS=${TS3_MARIADB_PASS}
+            - TS3_MARIDDB_DB=${TS3_MARIADB_DB}
+            - TS3_LICENSE_PATH=${TS3_MARIADB_LICENSE_PATH}

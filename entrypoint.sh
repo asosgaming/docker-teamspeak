@@ -1,9 +1,15 @@
 #!/bin/bash
 
+echo "Removing /tmp/.X1-lock, if existing"
+rm -f /tmp/.X1-lock
+
+echo "Correcting mount point permissions ..."
+chown "$TS3_USER":"$TS3_GROUP" -R "$TS3_HOME"
+
 # Set Configuration for Teamspeak in ts3server.ini
 # The following Lines will set the ts3server.ini
 
-cat > ts3server.ini <<EOF
+cat > ${DATA_VOLUME}/ts3server.ini <<EOF
 logquerycommands=${LOG_QUERY_COMMANDS:-0}
 machine_id=${MACHINE_ID:-}
 default_voice_port=${DEFAULT_VOICE_PORT:-9987}
@@ -21,7 +27,7 @@ EOF
 # or SQL_LITE
 if [[ -z "${TS3_MARIADB_DB}" ]]; then
 
-cat <<EOF >> ts3server.ini
+cat <<EOF >> ${DATA_VOLUME}/ts3server.ini
 dbplugin=ts3db_sqlite3
 dbpluginparameter=
 dbsqlpath=sql/
@@ -31,7 +37,7 @@ EOF
 
 else
 
-cat <<EOF >> ts3server.ini
+cat <<EOF >> ${DATA_VOLUME}/ts3server.ini
 dbplugin=ts3db_mariadb
 dbpluginparameter=ts3db_mariadb.ini
 dbsqlpath=sql/
@@ -40,7 +46,7 @@ EOF
 
 # Begin ts3db_mariadb.ini
 # This writes the database settings for MariaDB
-cat > ts3db_mariadb.ini <<EOF
+cat > ${DATA_VOLUME}/ts3db_mariadb.ini <<EOF
 [config]
 host=$TS3_MARIADB_HOST
 port=$TS3_MARIADB_PORT
@@ -52,7 +58,7 @@ EOF
 # end ts3db_mariadb.ini
 fi
 
-cat >> ts3server.ini <<EOF
+cat >> ${DATA_VOLUME}/ts3server.ini <<EOF
 logpath=${LOG_PATH:-logs}
 logquerycommands=${LOG_QUERY_COMMAND:-0}
 dbclientkeepdays=${DB_CLIENT_KEEP_DAYS:-30}
@@ -63,4 +69,4 @@ EOF
 # End ts3server.ini
 
 # Run Teamspeak server
-exec ./ts3server_minimal_runscript.sh inifile=files/ts3server.ini
+exec ./ts3server_minimal_runscript.sh inifile=${DATA_VOLUME}/ts3server.ini
