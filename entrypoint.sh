@@ -21,7 +21,7 @@ EOF
 # or SQL_LITE
 if [[ -z "${TS3_MARIADB_DB}" ]]; then
 
-cat <<EOF >> /teamspeak/files/ts3server.ini
+cat > /teamspeak/files/ts3server.ini <<EOF
 dbplugin=ts3db_sqlite3
 dbpluginparameter=
 dbsqlpath=sql/
@@ -31,9 +31,9 @@ EOF
 
 else
 
-cat <<EOF >> /teamspeak/files/ts3server.ini
+cat > /teamspeak/files/ts3server.ini <<EOF
 dbplugin=ts3db_mariadb
-dbpluginparameter=ts3db_mariadb.ini
+dbpluginparameter=/teamspeak/files/ts3db_mariadb.ini
 dbsqlpath=sql/
 dbsqlcreatepath=create_mariadb
 EOF
