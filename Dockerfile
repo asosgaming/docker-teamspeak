@@ -54,12 +54,12 @@ RUN chmod 755 /entrypoint.sh && \
 
 WORKDIR $TS3_HOME
 
-RUN   wget "http://dl.4players.de/ts/releases/${TS3_VERSION}/${TS3_FILENAME}-${TS3_VERSION}.tar.bz2" -O ${TS3_FILENAME}-${TS3_VERSION}.tar.bz2 \
+RUN   wget "http://dl.4players.de/ts/releases/$TS3_VERSION/$TS3_FILENAME-$TS3_VERSION.tar.bz2" -O $TS3_FILENAME-$TS3_VERSION.tar.bz2 \
        && tar -xjf "$TS3_FILENAME-$TS3_VERSION.tar.bz2" \
-       && rm ${TS3_FILENAME}-${TS3_VERSION}.tar.bz2 \
-       && cp -r ${TS3_FILENAME}/* $TS3_HOME \
-       && rm -r ${TS3_HOME}/tsdns \
-       && rm -r ${TS3_FILENAME}
+       && rm $TS3_FILENAME-$TS3_VERSION.tar.bz2 \
+       && cp -r $TS3_FILENAME/* $TS3_HOME \
+       && rm -r $TS3_HOME/tsdns \
+       && rm -r $TS3_FILENAME
 
 
 RUN  cp $(pwd)/redist/libmariadb.so.2 $(pwd)
