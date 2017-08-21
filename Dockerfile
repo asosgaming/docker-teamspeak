@@ -65,7 +65,7 @@ RUN   wget "http://dl.4players.de/ts/releases/${TS3_VERSION}/${TS3_FILENAME}-${T
 RUN  cp $(pwd)/redist/libmariadb.so.2 $(pwd)
 
 ADD entrypoint.sh /"$TS3_HOME"/entrypoint.sh
-RUN chown -R ${TS3_USER}:${TS3_GROUP} ${TS3_HOME} && chmod u+x /entrypoint.sh && chmod u+x ${TS3_HOME}/entrypoint.sh
+RUN chown -R "$TS3_USER":"$TS3_GROUP" "$TS3_HOME" && chmod u+x /entrypoint.sh && chmod u+x "$TS3_HOME"/entrypoint.sh
 
 USER "$TS3_USER"
 
