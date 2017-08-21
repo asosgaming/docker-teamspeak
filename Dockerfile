@@ -40,39 +40,39 @@ RUN chmod 755 /entrypoint.sh && \
     tar \
     sqlite3 \
     ca-certificates && \
-    groupadd -g 4000 -r "$TS3_GROUP" && \
-    useradd -u 4000 -r -m -g "$TS3_GROUP" -d "$TS3_HOME" "$TS3_USER" && \
-    mkdir -p "$TS3_DATA" && \
+    groupadd -g 4000 -r ${TS3_GROUP} && \
+    useradd -u 4000 -r -m -g ${TS3_GROUP} -d ${TS3_HOME} ${TS3_USER} && \
+    mkdir -p ${TS3_DATA} && \
     update-ca-certificates && \
     export TZ=America/New_York && \
     locale-gen --purge en_US.UTF-8 && \
     echo LC_ALL=en_US.UTF-8 >> /etc/default/locale && \
     echo LANG=en_US.UTF-8 >> /etc/default/locale && \
-    chown -R "$TS3_USER":"$TS3_GROUP" "$TS3_HOME" "$TS3_DATA" && \
+    chown -R ${TS3_USER}:${TS3_GROUP} ${TS3_HOME} ${TS3_DATA} && \
     apt-get -qq clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-WORKDIR "$TS3_HOME"
+WORKDIR ${TS3_HOME}
 
 RUN   wget "http://dl.4players.de/ts/releases/${TS3_VERSION}/${TS3_FILENAME}-${TS3_VERSION}.tar.bz2" -O ${TS3_FILENAME}-${TS3_VERSION}.tar.bz2 \
        && tar -xjf "$TS3_FILENAME-$TS3_VERSION.tar.bz2" \
-       && rm $TS3_FILENAME-$TS3_VERSION.tar.bz2 \
-       && cp -r $TS3_FILENAME/* $TS3_HOME \
-       && rm -r $TS3_HOME/tsdns \
-       && rm -r $TS3_FILENAME
+       && rm ${TS3_FILENAME}-${TS3_VERSION}.tar.bz2 \
+       && cp -r ${TS3_FILENAME}/* $TS3_HOME \
+       && rm -r ${TS3_HOME}/tsdns \
+       && rm -r ${TS3_FILENAME}
 
 
 RUN  cp $(pwd)/redist/libmariadb.so.2 $(pwd)
 
 ADD entrypoint.sh /"$TS3_HOME"/entrypoint.sh
-RUN chown -R "$TS3_USER":"$TS3_GROUP" "$TS3_HOME" && chmod u+x /entrypoint.sh && chmod u+x "$TS3_HOME"/entrypoint.sh
+RUN chown -R ${TS3_USER}:${TS3_GROUP} ${TS3_HOME} && chmod u+x /entrypoint.sh && chmod u+x ${TS3_HOME}/entrypoint.sh
 
-USER "$TS3_USER"
+USER ${TS3_USER}
 
-VOLUME "$TS3_DATA"
+VOLUME ${TS3_DATA}
 
 EXPOSE 9987/udp
 EXPOSE 10011
 EXPOSE 30033
 
-ENTRYPOINT "$TS3_HOME"/entrypoint.sh
+ENTRYPOINT ${TS3_HOME}/entrypoint.sh
