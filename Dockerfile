@@ -47,7 +47,8 @@ RUN chmod 755 /entrypoint.sh && \
     echo LC_ALL=en_US.UTF-8 >> /etc/default/locale && \
     echo LANG=en_US.UTF-8 >> /etc/default/locale && \
     apt-get -qq clean && \
-    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
+    mkdir -p ${TS3_FILES}
 
 WORKDIR ${TS3_HOME}
 
