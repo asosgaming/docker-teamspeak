@@ -13,8 +13,8 @@ filetransfer_port=${FILE_TRANSFER_PORT:-30033}
 filetransfer_ip=${FILE_TRANSFER_IP:-0.0.0.0}
 query_port=${QUERY_PORT:-10011}
 query_ip=${QUERY_IP:-0.0.0.0}
-query_ip_whitelist=${QUERY_IP_WHITELIST:-query_ip_whitelist.txt}
-query_ip_blacklist=${QUERY_IP_BLACKLIST:-query_ip_blacklist.txt}
+query_ip_whitelist=$TS3_FILES/${QUERY_IP_WHITELIST:-query_ip_whitelist.txt}
+query_ip_blacklist=$TS3_FILES/${QUERY_IP_BLACKLIST:-query_ip_blacklist.txt}
 EOF
 
 # This checks if it should run with an external MariaDB
@@ -68,4 +68,4 @@ EOF
 # End ts3server.ini
 
 # Run Teamspeak server
-exec ./ts3server_minimal_runscript.sh inifile=$TS3_FILES/ts3server.ini
+exec ./ts3server_minimal_runscript.sh inifile=files/ts3server.ini
