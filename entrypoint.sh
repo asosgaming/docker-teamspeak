@@ -3,7 +3,7 @@
 # Set Configuration for Teamspeak in ts3server.ini
 # The following Lines will set the ts3server.ini
 
-cat > $TS3_FILES/ts3server.ini <<EOF
+cat > ${TS3_FILES}/ts3server.ini <<EOF
 logquerycommands=${LOG_QUERY_COMMANDS:-0}
 machine_id=${MACHINE_ID:-}
 default_voice_port=${DEFAULT_VOICE_PORT:-9987}
@@ -13,15 +13,15 @@ filetransfer_port=${FILE_TRANSFER_PORT:-30033}
 filetransfer_ip=${FILE_TRANSFER_IP:-0.0.0.0}
 query_port=${QUERY_PORT:-10011}
 query_ip=${QUERY_IP:-0.0.0.0}
-query_ip_whitelist=$TS3_FILES/${QUERY_IP_WHITELIST:-query_ip_whitelist.txt}
-query_ip_blacklist=$TS3_FILES/${QUERY_IP_BLACKLIST:-query_ip_blacklist.txt}
+query_ip_whitelist=${QUERY_IP_WHITELIST:-query_ip_whitelist.txt}
+query_ip_blacklist=${QUERY_IP_BLACKLIST:-query_ip_blacklist.txt}
 EOF
 
 # This checks if it should run with an external MariaDB
 # or SQL_LITE
 if [[ -z "${TS3_MARIADB_DB}" ]]; then
 
-cat <<EOF >> $TS3_FILES/ts3server.ini
+cat <<EOF >> ${TS3_FILES}/ts3server.ini
 dbplugin=ts3db_sqlite3
 dbpluginparameter=
 dbsqlpath=sql/
@@ -31,9 +31,9 @@ EOF
 
 else
 
-cat <<EOF >> $TS3_FILES/ts3server.ini
+cat <<EOF >> ${TS3_FILES}/ts3server.ini
 dbplugin=ts3db_mariadb
-dbpluginparameter=$TS3_FILES/ts3db_mariadb.ini
+dbpluginparameter=${TS3_FILES}/ts3db_mariadb.ini
 dbsqlpath=sql/
 dbsqlcreatepath=create_mariadb
 EOF
@@ -42,11 +42,11 @@ EOF
 # This writes the database settings for MariaDB
 cat > $TS3_FILES/ts3db_mariadb.ini <<EOF
 [config]
-host=$TS3_MARIADB_HOST
-port=$TS3_MARIADB_PORT
-username=$TS3_MARIADB_USER
-password=$TS3_MARIADB_PASS
-database=$TS3_MARIADB_DB
+host=${TS3_MARIADB_HOST}
+port=${TS3_MARIADB_PORT}
+username=${TS3_MARIADB_USER}
+password=${TS3_MARIADB_PASS}
+database=${TS3_MARIADB_DB}
 socket=
 EOF
 # end ts3db_mariadb.ini
@@ -68,4 +68,4 @@ EOF
 # End ts3server.ini
 
 # Run Teamspeak server
-exec ./ts3server_minimal_runscript.sh inifile=files/ts3server.ini
+exec ./ts3server_minimal_runscript.sh inifile=${TS3_FILES}/ts3server.ini
