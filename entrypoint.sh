@@ -40,7 +40,7 @@ EOF
 
 # Begin ts3db_mariadb.ini
 # This writes the database settings for MariaDB
-cat > $TS3_FILES/ts3db_mariadb.ini <<EOF
+cat > ${TS3_FILES}/ts3db_mariadb.ini <<EOF
 [config]
 host=${TS3_MARIADB_HOST}
 port=${TS3_MARIADB_PORT}
@@ -52,7 +52,7 @@ EOF
 # end ts3db_mariadb.ini
 fi
 
-cat >> $TS3_FILES/ts3server.ini <<EOF
+cat >> ${TS3_FILES}/ts3server.ini <<EOF
 logpath=${LOG_PATH:-logs}
 logquerycommands=${LOG_QUERY_COMMAND:-0}
 dbclientkeepdays=${DB_CLIENT_KEEP_DAYS:-30}
@@ -63,7 +63,7 @@ EOF
 # End ts3server.ini
 
 ## Run Teamspeak server
-## exec ./ts3server_minimal_runscript.sh inifile=files/ts3server.ini
+## exec ./ts3server_minimal_runscript.sh inifile={files}/ts3server.ini
 
 # End ts3server.ini
 
