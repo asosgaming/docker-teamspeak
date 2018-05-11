@@ -4,6 +4,7 @@
 
 * Version 2.0.0.2
 
+[![Current Build](https://images.microbadger.com/badges/version/asos/teamspeak.svg)](https://microbadger.com/images/asos/teamspeak "Get your own version badge on microbadger.com")
 [![Docker Automated build](https://img.shields.io/docker/automated/asos/teamspeak.svg?style=plastic)](https://hub.docker.com/r/asos/teamspeak/builds)
 [![Docker Pulls](https://img.shields.io/docker/pulls/asos/teamspeak.svg?style=plastic)](https://github.com/asosgaming/teamspeak)
 [![Github Releases (by Release)](https://img.shields.io/github/release/asosgaming/teamspeak.svg?style=plastic)](https://github.com/asosgaming/teamspeak/releases)
