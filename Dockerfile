@@ -15,7 +15,7 @@ ARG VERSION
 LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.name="ASoS Teamspeak 3 Docker" \
       org.label-schema.description="A docker container for running a teamspeak server with a MySQL/MariaDB Database." \
-      org.label-schema.url="e.g. http://www.asosgaming.com/" \
+      org.label-schema.url="http://www.asosgaming.com/" \
       org.label-schema.vcs-ref=$VCS_REF \
       org.label-schema.vcs-url="https://github.com/asosgaming/teamspeak" \
       org.label-schema.vendor="ASoS Gaming Community" \
