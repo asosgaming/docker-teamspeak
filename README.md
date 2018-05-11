@@ -7,7 +7,7 @@
 [![Docker Automated build](https://img.shields.io/docker/automated/asos/teamspeak.svg?style=plastic)](https://hub.docker.com/r/asos/teamspeak/builds)
 [![Docker Pulls](https://img.shields.io/docker/pulls/asos/teamspeak.svg?style=plastic)](https://github.com/asosgaming/teamspeak)
 [![Github Releases (by Release)](https://img.shields.io/github/release/asosgaming/teamspeak.svg?style=plastic)](https://github.com/asosgaming/teamspeak/releases)
-[![GitHub tag](https://img.shields.io/github/tag/asosgaming/teamspeak.svg?style=plastic)](https://github.com/asosgaming/teamspeak/tags/2.0.0.2)
+[![GitHub tag](https://img.shields.io/github/tag/asosgaming/teamspeak.svg?style=plastic)](https://github.com/asosgaming/teamspeak/tags)
 [![GitHub forks](https://img.shields.io/github/forks/asosgaming/teamspeak.svg?style=plastic)](https://github.com/asosgaming/teamspeak/network)
 
 ## Support
