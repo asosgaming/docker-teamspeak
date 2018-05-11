@@ -1,6 +1,6 @@
 Teamspeak3:
         restart: always
-        image: asos/teamspeak:1.0.0.5
+        image: asos/teamspeak:2.0.0.2
         container_name: teamspeak
         ports:
             - "${HOST_VOICE_PORT}:9987/udp"
