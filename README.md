@@ -1,4 +1,5 @@
 ## ASoS Gaming TeamSpeak 3 Docker Image
+#Docker container for the TeamSpeak 3 Server.
 
 ## Version: [2.0.0.2](https://github.com/asosgaming/teamspeak/blob/master/Dockerfile)
 
@@ -15,9 +16,6 @@
 [![Stories in Ready](https://badge.waffle.io/asosgaming/teamspeak.png?label=ready&title=Ready)](http://waffle.io/asosgaming/teamspeak)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/asosgaming/teamspeak/develop/LICENSE)
 
-Docker container for the TeamSpeak 3 Server.
-
-TeamSpeak 3 Homepage: https://www.teamspeak.com/teamspeak3.html
 ## Instructions
 
 TeamSpeak 3 Homepage: https://www.teamspeak.com/teamspeak3.html
