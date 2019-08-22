@@ -4,7 +4,7 @@ MAINTAINER Reesey275 <reesey275@gmail.com>
 ENV TS3_USER=teamspeak \
     TS3_GROUP=teamspeak \
     TS3_HOME=/teamspeak \
-    TS3_VERSION=3.0.13.6 \
+    TS3_VERSION=3.9.1 \
     TS3_FILENAME=teamspeak3-server_linux_amd64 
 	
 # Build-time metadata as defined at http://label-schema.org
@@ -66,6 +66,7 @@ VOLUME ${TS3_HOME}
 
 EXPOSE 9987/udp
 EXPOSE 10011
+EXPOSE 10022
 EXPOSE 30033
 
 ENTRYPOINT ${TS_HOME}/entrypoint.sh

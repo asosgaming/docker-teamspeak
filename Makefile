@@ -12,4 +12,4 @@ release:
 	docker push asosgaming/${NAME}:${VERSION}
 
 test: build
-	docker run  --rm -it -p "9987:9987/udp" ${NAME}:${VERSION}
+	docker run  --rm -it -p "9987:9987/udp" "10022:10022/tcp" "10011:10011/tcp" "30033:30033/tcp" ${NAME}:${VERSION}

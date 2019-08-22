@@ -1,15 +1,15 @@
 ## ASoS Gaming TeamSpeak 3 Docker Image
 
-## Version: [1.0.0.5](https://github.com/asosgaming/teamspeak/blob/master/Dockerfile)
+## Version: [2.1.](https://github.com/asosgaming/teamspeak/blob/master/Dockerfile)
 
-* Version 1.0.0.5
+* Version 2.1
 
 [![](https://images.microbadger.com/badges/version/asos/teamspeak.svg)](https://microbadger.com/images/asos/teamspeak "Get your own version badge on microbadger.com")
 [![](https://images.microbadger.com/badges/image/asos/teamspeak.svg)](https://microbadger.com/images/asos/teamspeak "Get your own image badge on microbadger.com")
 
 
 [![Docker Automated build](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg?style=plastic)](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)
-[![Github Releases (by Release)](https://img.shields.io/github/downloads/atom/atom/v0.190.0/total.svg)](https://github.com/asosgaming/teamspeak/releases/tag/1.0.0.5)
+[![Github Releases (by Release)](https://img.shields.io/github/downloads/atom/atom/v0.190.0/total.svg)](https://github.com/asosgaming/teamspeak/releases/tag/2.1)
 
 
 
@@ -73,6 +73,19 @@ Below is the complete list of available options that can be used to customize yo
 | `TS3_MARIADB_HOST` | Hostname of the DatabaseServer like localhost Default to  `Not Set`. |
 | `TS3_MARIADB_PORT` | DatabaseServer Port. Default to  `Not Set`.  |
 
+
+------------------------UPDATES---------------------------
+22 August 2019 - Reesey275
+
+Upgraded to Latest Version of Sinusbot Beta
+
+Added Tag for Version 2.1
+Added port 10022 for Teamspeak FTP server to image.
+Completed Update of TS3 Client to v. 3.9.1
+Minor update to container config.
+Added updates section to README.
+
+----------------------------------------------------------
 
 # LICENSE
 The MIT License (MIT)
