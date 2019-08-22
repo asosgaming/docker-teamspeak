@@ -87,7 +87,7 @@ Added apt-utils to installed software list.
 
 #Teamspeak Updates
 Updated Teamspeak 3 Server to V. 3.9.1
-Updated Teamspeak download location to new URL https://files.teamspeak-services.com/releases/ from http://dl.4players.de/ts/releases/
+Updated Teamspeak download location from http://dl.4players.de/ts/releases/ to new URL https://files.teamspeak-services.com/releases/server 
 
 #General Update Notes
 Added updates section to README.

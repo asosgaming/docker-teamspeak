@@ -48,7 +48,7 @@ RUN chmod 755 /entrypoint.sh && \
 
 WORKDIR ${TS3_HOME}
 
-RUN   wget "https://files.teamspeak-services.com/releases/${TS3_VERSION}/${TS3_FILENAME}-${TS3_VERSION}.tar.bz2" -O ${TS3_FILENAME}-${TS3_VERSION}.tar.bz2 \
+RUN   wget "https://files.teamspeak-services.com/releases/server/${TS3_VERSION}/${TS3_FILENAME}-${TS3_VERSION}.tar.bz2" -O ${TS3_FILENAME}-${TS3_VERSION}.tar.bz2 \
        && tar -xjf "${TS3_FILENAME}-${TS3_VERSION}.tar.bz2" \
        && rm ${TS3_FILENAME}-${TS3_VERSION}.tar.bz2 \
        && cp -r ${TS3_FILENAME}/* ${TS3_HOME} \
