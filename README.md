@@ -74,15 +74,22 @@ Below is the complete list of available options that can be used to customize yo
 | `TS3_MARIADB_PORT` | DatabaseServer Port. Default to  `Not Set`.  |
 
 
-------------------------UPDATES---------------------------
-22 August 2019 - Reesey275
+##------------------------UPDATES---------------------------
+22 August 2019
 
-Upgraded to Latest Version of Sinusbot Beta
-
+#Container Updates
 Added Tag for Version 2.1
 Added port 10022 for Teamspeak FTP server to image.
-Completed Update of TS3 Client to v. 3.9.1
 Minor update to container config.
+Added apt-utils to installed software list.
+
+
+
+#Teamspeak Updates
+Updated Teamspeak 3 Server to V. 3.9.1
+Updated Teamspeak download location to new URL https://files.teamspeak-services.com/releases/ from http://dl.4players.de/ts/releases/
+
+#General Update Notes
 Added updates section to README.
 
 ----------------------------------------------------------
