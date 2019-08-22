@@ -1,5 +1,5 @@
 FROM debian:jessie
-MAINTAINER Reesey275 <reesey275@gmail.com>
+MAINTAINER Reesey275  <reesey275@gmail.com>
 
 ENV TS3_USER=teamspeak \
     TS3_GROUP=teamspeak \
