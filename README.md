@@ -1,15 +1,15 @@
 ## ASoS Gaming TeamSpeak 3 Docker Image
 
 [![Docker Automated build](https://img.shields.io/docker/automated/asos/teamspeak.svg?style=plastic)](https://hub.docker.com/r/asos/teamspeak/builds)
+[![Docker Build Status](https://img.shields.io/docker/cloud/build/asos/teamspeak?style=plastic)](https://hub.docker.com/r/asos/teamspeak)
 [![Docker Pulls](https://img.shields.io/docker/pulls/asos/teamspeak.svg?style=plastic)](https://github.com/asosgaming/teamspeak)
-[![Github Releases (by Release)](https://img.shields.io/github/release/asosgaming/teamspeak.svg?style=plastic)](https://github.com/asosgaming/teamspeak/releases)
-[![GitHub tag](https://img.shields.io/github/tag/asosgaming/teamspeak.svg?style=plastic)](https://github.com/asosgaming/teamspeak/tags)
+[![Github Releases (by Release)]https://img.shields.io/github/v/release/asosgaming/teamspeak?include_prereleases&style=plastic)](https://github.com/asosgaming/teamspeak/releases)
 [![GitHub forks](https://img.shields.io/github/forks/asosgaming/teamspeak.svg?style=plastic)](https://github.com/asosgaming/teamspeak/network)
+
 
 ## Support
 [![GitHub issues](https://img.shields.io/github/issues/asosgaming/teamspeak.svg?style=plastic)](https://github.com/asosgaming/teamspeak/issues)
 [![GitHub closed issues](https://img.shields.io/github/issues-closed/asosgaming/teamspeak.svg?style=plastic)](https://github.com/asosgaming/teamspeak)
-[![Stories in Ready](https://badge.waffle.io/asosgaming/teamspeak.png?label=ready&title=Ready)](http://waffle.io/asosgaming/teamspeak)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/asosgaming/teamspeak/develop/LICENSE)
 
 ## Instructions
@@ -63,7 +63,7 @@ Below is the complete list of available options that can be used to customize yo
 
 ----------------------------------------------------------
 ## UPDATES
-
+- Updated Teamspeak 3 Server version to 3.9.1
 - Instituting Changes to allow for Docker Image Tags in build environment.
 - Completed Update of Teamspeak Server to latest version allowed for use with Sinusbot.
 - Versioning added to match Sinusbot Versions. For best results make sure both versions are the same.

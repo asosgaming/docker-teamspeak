@@ -5,7 +5,7 @@ ENV TS3_USER=teamspeak \
     TS3_GROUP=teamspeak \
     TS3_HOME=/teamspeak \
     TS3_FILES=/teamspeak/files \
-    TS3_VERSION=3.1.1 \
+    TS3_VERSION=3.9.1 \
     TS3_FILENAME=teamspeak3-server_linux_amd64
 
 # Build-time metadata as defined at http://label-schema.org
@@ -52,7 +52,7 @@ RUN chmod 755 /entrypoint.sh && \
 
 WORKDIR ${TS3_HOME}
 
-RUN   wget "http://dl.4players.de/ts/releases/${TS3_VERSION}/${TS3_FILENAME}-${TS3_VERSION}.tar.bz2" -O ${TS3_FILENAME}-${TS3_VERSION}.tar.bz2 \
+RUN   wget "https://files.teamspeak-services.com/releases/server/${TS3_VERSION}/${TS3_FILENAME}-${TS3_VERSION}.tar.bz2" -O ${TS3_FILENAME}-${TS3_VERSION}.tar.bz2 \
        && tar -xjf "${TS3_FILENAME}-${TS3_VERSION}.tar.bz2" \
        && rm ${TS3_FILENAME}-${TS3_VERSION}.tar.bz2 \
        && cp -r ${TS3_FILENAME}/* ${TS3_HOME} \
