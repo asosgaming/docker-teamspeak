@@ -6,7 +6,8 @@ ENV TS3_USER=teamspeak \
     TS3_HOME=/teamspeak \
     TS3_FILES=/teamspeak/files \
     TS3_VERSION=3.9.1 \
-    TS3_FILENAME=teamspeak3-server_linux_amd64
+    TS3_FILENAME=teamspeak3-server_linux_amd64 \
+    TS3SERVER_LICENSE=accept
 
 # Build-time metadata as defined at http://label-schema.org
 ARG BUILD_DATE

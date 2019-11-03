@@ -63,7 +63,7 @@ EOF
 # End ts3server.ini
 
 # Teamspeak License Agreement
-cat > ${TS3_FILES}/.ts3server_license_accepted <<EOF
+cat >> ${TS3_FILES}/.ts3server_license_accepted <<EOF
 license_accepted=1
 EOF
 ## Run Teamspeak server
