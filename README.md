@@ -14,7 +14,7 @@
 
 ## Instructions
 
-TeamSpeak 3 Homepage: https://www.teamspeak.com/teamspeak3.html
+TeamSpeak 3 Homepage: https://www.teamspeak.com/
 
 
 * Installation Instructions
