@@ -66,6 +66,7 @@ EOF
 cat >> ${TS3_FILES}/.ts3server_license_accepted <<EOF
 license_accepted=1
 EOF
+# End .ts3server_license_accepted
 ## Run Teamspeak server
 ## exec ./ts3server_minimal_runscript.sh inifile={files}/ts3server.ini
 
