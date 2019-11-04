@@ -3,7 +3,7 @@
 # Set Configuration for Teamspeak in ts3server.ini
 # The following Lines will set the ts3server.ini
 
-cat > ${TS3_FILES}/ts3server.ini <<EOF
+cat > ${TS3_HOME}/ts3server.ini <<EOF
 logquerycommands=${LOG_QUERY_COMMANDS:-0}
 machine_id=${MACHINE_ID:-}
 default_voice_port=${DEFAULT_VOICE_PORT:-9987}
@@ -31,7 +31,7 @@ EOF
 
 else
 
-cat <<EOF >> ${TS3_FILES}/ts3server.ini
+cat <<EOF >> ${TS3_HOME}/ts3server.ini
 dbplugin=ts3db_mariadb
 dbpluginparameter=${TS3_FILES}/ts3db_mariadb.ini
 dbsqlpath=sql/
@@ -40,7 +40,7 @@ EOF
 
 # Begin ts3db_mariadb.ini
 # This writes the database settings for MariaDB
-cat > ${TS3_FILES}/ts3db_mariadb.ini <<EOF
+cat > ${TS3_HOME}/ts3db_mariadb.ini <<EOF
 [config]
 host=${TS3_MARIADB_HOST}
 port=${TS3_MARIADB_PORT}
@@ -52,7 +52,7 @@ EOF
 # end ts3db_mariadb.ini
 fi
 
-cat >> ${TS3_FILES}/ts3server.ini <<EOF
+cat >> ${TS3_HOME}/ts3server.ini <<EOF
 logpath=${LOG_PATH:-logs}
 logquerycommands=${LOG_QUERY_COMMAND:-0}
 dbclientkeepdays=${DB_CLIENT_KEEP_DAYS:-30}
@@ -63,7 +63,7 @@ EOF
 # End ts3server.ini
 
 # Teamspeak License Agreement
-cat >> ${TS3_FILES}/.ts3server_license_accepted <<EOF
+cat >> ${TS3_HOME}/.ts3server_license_accepted <<EOF
 license_accepted=1
 EOF
 # End .ts3server_license_accepted
@@ -73,4 +73,4 @@ EOF
 # End ts3server.ini
 
 # Run Teamspeak server
-exec ./ts3server_minimal_runscript.sh inifile=${TS3_FILES}/ts3server.ini
+exec ./ts3server_minimal_runscript.sh inifile=${TS3_HOME}/ts3server.ini
